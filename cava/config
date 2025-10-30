@@ -1,6 +1,6 @@
 ## Configuration file for CAVA.
 # Remove the ; to change parameters.
-
+theme = 'your-theme'
 
 [general]
 

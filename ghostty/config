@@ -1,8 +1,8 @@
-theme = catppuccin-mocha
+theme = Catppuccin Mocha
 font-family = FiraCode Nerd Font Mono
 font-size =  16
 command = /bin/zsh
-background-opacity = 0.99
+background-opacity = 0.95
 window-decoration = false
 shell-integration= zsh
 keybind = ctrl+w=close_surface
@@ -14,3 +14,4 @@ keybind = ctrl+l=goto_split:right
 keybind = ctrl+h=goto_split:left
 keybind = ctrl+j=goto_split:bottom
 keybind = ctrl+k=goto_split:top
+

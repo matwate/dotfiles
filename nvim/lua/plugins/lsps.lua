@@ -15,10 +15,10 @@ return {
         "pyright",
         "black",
         "mypy",
-        "ty",
+
         "ruff",
         "html-lsp",
-        "prettierd",
+
         "templ",
         "zls",
         "gleam",
@@ -91,10 +91,7 @@ return {
       lspconfig.zls.setup({
         capabilities = capabilities,
       })
-      lspconfig.prettier.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.tailwindcss.setup({
+     lspconfig.tailwindcss.setup({
         capabilities = capabilities,
       })
       lspconfig.gleam.setup({
@@ -103,13 +100,7 @@ return {
       lspconfig.templ.setup({
         capabilities = capabilities,
       })
-      lspconfig.prettierd.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.ty.setup({
-        capabilities = capabilities,
-      })
-      lspconfig.vtsls.setup({
+    lspconfig.vtsls.setup({
         capabilities = capabilities,
       })
       lspconfig.vuels.setup({
