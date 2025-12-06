@@ -15,7 +15,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("matwa-conf")
+
 require("lazy").setup("plugins")
+
 
 -- Utility: open a floating window with given content
 local function open_float(content)

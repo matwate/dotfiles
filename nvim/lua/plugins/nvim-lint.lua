@@ -6,16 +6,23 @@ return {
       'BufNewFile',
     },
     config = function()
-      require("lint").linters_by_ft = {
-        markdown = { "markdownlint" },
+      local lint = require("lint")
+      lint.linters_by_ft = {
         python = { "ruff" },
       }
+
+      local augroup = vim.api.nvim_create_augroup("LintAutogroup", { clear = true })
+      vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
+        group = augroup,
+        callback = function()
+          lint.try_lint()
+        end,
+      })
     end
   },
   {
     "folke/trouble.nvim",
-    opts = { test
-    }, -- for default options, refer to the configuration section for custom setup.
+    opts = {}, -- use defaults; configure via keymaps below
     cmd = "Trouble",
     keys = {
       {

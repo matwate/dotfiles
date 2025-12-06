@@ -1,0 +1,11 @@
+[colors.primary]
+background = '#151218'
+foreground = '#e7e0e8'
+
+[colors.selection]
+text = '#e7e0e8'
+background = '#513c73'
+
+[colors.cursor]
+text = '#151218'
+cursor = '#d5bbfc'
