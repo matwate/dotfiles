@@ -24,6 +24,7 @@ return {
         "zls",
         "vtsls",
         "vue-language-server",
+        "tinymist",
         -- Formatters / Linters
         "black",
         "ruff",
@@ -165,6 +166,10 @@ return {
         },
       })
 
+      vim.lsp.config('qmlls', {
+        filetypes = { 'qml', 'qtquick' },
+      })
+
 
       -- Enable all desired servers (others use defaults from lspconfig repository)
       vim.lsp.enable({
@@ -177,6 +182,7 @@ return {
         'templ',
         'zls',
         'vtsls',
+        "tinymist",
       })
     end,
   },

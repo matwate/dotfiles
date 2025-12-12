@@ -9,3 +9,6 @@ vim.cmd("nnoremap <C-u> <C-u>zz")
 vim.g.mapleader = " "
 vim.wo.relativenumber = true
 vim.wo.number = true
+
+-- Load custom keymaps
+require("matwa-keymaps")
