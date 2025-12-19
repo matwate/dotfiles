@@ -1,11 +1,17 @@
 return {
-    'nvim-flutter/flutter-tools.nvim',
-    lazy = false,
-    dependencies = {
-        'nvim-lua/plenary.nvim',
-        'stevearc/dressing.nvim', -- optional for vim.ui.select
-    },
-    config = function()
-        require("flutter-tools").setup {} -- use defaults
-    end 
+	{ "nvim-lua/plenary.nvim", priority = 1000 },
+	{
+		"stevearc/dressing.nvim",
+		event = "VeryLazy",
+		config = function()
+			require("dressing").setup({})
+		end,
+	},
+	{
+		"nvim-flutter/flutter-tools.nvim",
+		dependencies = {},
+		config = function()
+			require("flutter-tools").setup({}) -- use defaults
+		end,
+	},
 }

@@ -1,6 +1,5 @@
 return {
   "echasnovski/mini.nvim",
-  version = false,
   config = function()
     -- Jump2d for flash.nvim replacement
     require('mini.icons').setup()
@@ -16,7 +15,7 @@ return {
         -- Built-in completion
         { mode = 'i', keys = '<C-x>' },
 
-        -- `g` key
+       -- `g` key
         { mode = 'n', keys = 'g' },
         { mode = 'x', keys = 'g' },
 
