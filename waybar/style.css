@@ -1,0 +1,38 @@
+*{
+	all: unset;
+}
+
+window>box{
+	font-family: Courier, monospace;
+	/*background-color: rgba(0,0,0, 0.3);*/
+	background-color: #2a292d;
+}
+
+#workspaces button.active{
+	font-family: 'Bodoni* 24 Medium';
+	font-size: 24px;
+	color: #89dceb;
+}
+
+#clock{
+	font-family: Courier;
+	margin: 15px;
+	color: #89dceb;
+	padding: 15px 10px;
+	margin: 0px;
+	background: rgba(0,0,0,0);
+}
+
+#workspaces {
+	padding: 15px 10px;
+	margin: 0px;
+	border-radius: 2px;
+	background-color: rgba(0,0,0, 0);
+}
+
+#battery,
+#pulseaudio {
+	padding: 15px 10px;
+	margin: 0px;
+	color: #89dceb;
+}

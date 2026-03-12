@@ -1,0 +1,38 @@
+[
+	{
+		"name": "sidebar",
+		"layer": "top",
+		"position": "left",
+		"modules-left": ["clock"],
+		"modules-center": ["niri/workspaces"],
+		"modules-right": ["battery", "pulseaudio", "custom/menu"],
+		"niri/workspaces": {
+			"disable-scroll": true,
+			"all-outputs": true,
+			"on-click": "activate",
+			"format": "{icon}",
+			"format-icons": {
+				"active": "•",
+				"default": "○"
+			},
+			"sort-by-number": true 
+		},
+		"clock": {
+    			"format": "{:%H\n%M}",
+    		},
+		"battery": {
+			"format": "{capacity}% {icon}",
+			"format-icons": ["", "", "", "", ""]
+		},
+		"pulseaudio": {
+			"format": "{volume}% {icon}",
+			"format-icons": {
+				"default": ["", "", ""]
+			},
+			"on-click": "pavucontrol"
+		},
+		"custom/menu": {
+			
+		}
+	}
+]

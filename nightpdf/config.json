@@ -1,0 +1,147 @@
+{
+	"version": "v3.0.0-beta5",
+	"general": {
+		"MaximizeOnOpen": true,
+		"DisplayThumbs": true
+	},
+	"keybinds": {
+		"OpenWindow": {
+			"keybind": [
+				{
+					"key": "T",
+					"modifiers": {}
+				}
+			],
+			"action": "openNewPDF",
+			"displayName": "Open New PDF"
+		},
+		"CloseWindow": {
+			"keybind": [
+				{
+					"key": "w",
+					"modifiers": {}
+				},
+				{
+					"key": "F4",
+					"modifiers": {}
+				}
+			],
+			"action": "close-tab",
+			"displayName": "Close Tab"
+		},
+		"ReOpen": {
+			"keybind": [
+				{
+					"key": "T",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				}
+			],
+			"action": "reopen-tab",
+			"displayName": "Reopen Tab"
+		},
+		"SwitchTab": {
+			"keybind": [
+				{
+					"key": "Tab",
+					"modifiers": {}
+				},
+				{
+					"key": "PageDown",
+					"modifiers": {}
+				}
+			],
+			"action": "switch-tab",
+			"data": "next",
+			"displayName": "Switch Tab"
+		},
+		"PreviousTab": {
+			"keybind": [
+				{
+					"key": "Tab",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				},
+				{
+					"key": "PageUp",
+					"modifiers": {}
+				}
+			],
+			"action": "switch-tab",
+			"data": "prev",
+			"displayName": "Previous Tab"
+		},
+		"LeftTab": {
+			"keybind": [
+				{
+					"key": "PageUp",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				}
+			],
+			"action": "move-tab",
+			"data": "prev",
+			"displayName": "Move Tab Left"
+		},
+		"RightTab": {
+			"keybind": [
+				{
+					"key": "PageDown",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				}
+			],
+			"action": "move-tab",
+			"data": "next",
+			"displayName": "Move Tab Right"
+		},
+		"StartTab": {
+			"keybind": [
+				{
+					"key": "Home",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				}
+			],
+			"action": "move-tab",
+			"data": "start",
+			"displayName": "Move Tab to Start"
+		},
+		"EndTab": {
+			"keybind": [
+				{
+					"key": "End",
+					"modifiers": {
+						"Shift": {
+							"savesAs": "Shift",
+							"osDependent": false
+						}
+					}
+				}
+			],
+			"action": "move-tab",
+			"data": "end",
+			"displayName": "Move Tab to End"
+		}
+	}
+}
